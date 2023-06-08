@@ -1,0 +1,209 @@
+@import '../abstract/variables';
+
+header {
+  .containerheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .hamburger {
+      display: none;
+      .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        background-color: #000;
+      }
+    }
+    .headercontent {
+      width: 100%;
+      .containerheadercontent {
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+
+        padding: 1rem 0rem;
+        .search {
+          form {
+            width: 150%;
+            max-width: 850px;
+        
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            button {
+              position: absolute;
+              background-color: transparent;
+              border-bottom: 1px solid #000;
+              cursor: pointer;
+              border: none;
+              left: 0;
+            }
+            input {
+              width: 100%;
+              padding: .4rem .2rem .4rem 1.5rem;
+              background-color: transparent;
+              outline: none;
+              border-bottom: 1px solid #000;
+            }
+          }
+        }
+        .logorexpeita {
+          width: 160px;
+        }
+        .linksheader {
+          display: flex;
+          align-items: center;
+          gap: 35px;
+          .truckdelivery {
+            cursor: pointer;
+            .rastrear {
+              font-size: 1rem;
+              font-family: $font-montserrat;
+              font-weight: 510;
+            }
+          }
+          .login {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            position: relative;
+            .loginregister {
+              font-family: 1rem;
+              font-family: $font-montserrat;
+              font-weight: 510;
+            }
+            .logindropdown {
+              cursor: auto;
+              display: none;
+              position: absolute;
+              flex-direction: column;
+              text-align: center;
+              align-items: center;
+              z-index: 999;
+              top: 100%;
+              width: 400px;
+              height: 120px;
+              right: 0;
+              background-color: #efefef;
+              padding: 1rem;
+              box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+              .loginin {
+                background-color: #000;
+                color: #fff;
+                width: 100%;
+                padding: 1rem 0rem;
+                margin-bottom: .6rem;
+                cursor: pointer;
+              }
+              p {
+                a {
+                  font-weight: 600;
+                  cursor: pointer;
+                  text-decoration: underline;
+                  &:visited {
+                    color: #000;
+                  }
+                }
+              }
+            }
+          }
+          .searchmobile {
+            display: none;
+          }
+          .cart-button {
+            cursor: pointer;
+            .cartcontent {
+              display: none;
+              position: fixed;
+              z-index: 999;
+              right: 0;
+              width: 25%;
+              height: 100%;
+              background-color: #d7d7d7;
+            }
+          }
+        } 
+        .menumobileheader {
+          display: none;
+          flex-direction: column;
+          .truckdelivery {
+            cursor: pointer;
+            .rastrear {
+              font-size: 1rem;
+              font-family: $font-montserrat;
+              font-weight: 510;
+            }
+          }
+          .login {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            a {
+              font-size: 1rem;
+              font-family: $font-montserrat;
+              font-weight: 510;
+              &:nth-child(2) {
+                padding-left: 10px;
+              }
+              &:nth-child(1) {
+                padding-right: 15px;
+                border-right: 1px solid #000;
+              }
+              &:visited {
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+    .dropdownheader {
+      width: 100%;
+      .navdropdown {
+        max-width: 1300px;
+        margin: 0 auto;
+
+        margin-bottom: .4rem;
+        .classtotal {
+          display: none;
+        }
+        ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .category {
+            padding: 1rem 2rem;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            cursor: pointer;
+            &:hover {
+              background-color: #ffffff;
+            }
+            a {
+              color: #000;
+              font-weight: 500;
+              font-family: $font-montserrat;
+            }
+          }
+          .dropdownprodutos, .dropdowncasacos, .dropdowncalças,
+          .dropdownacessorios, .dropdownbones, .dropdownmochilas,
+          .dropdownall {
+            @include dropdownheader;
+          }
+        }
+      }
+    }
+  }
+}

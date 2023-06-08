@@ -1,0 +1,1754 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-size: 100%;
+  font: inherit;
+  scroll-behavior: smooth;
+  vertical-align: baseline;
+  list-style: none;
+  color: #000;
+}
+
+*:visited {
+  color: #000;
+}
+
+/*  FONTE  */
+/*  FUNCTIONS MIXINS SASS  */
+/*  FONTE  */
+/*  FUNCTIONS MIXINS SASS  */
+header .containerheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .containerheader .hamburger {
+  display: none;
+}
+
+header .containerheader .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #000;
+}
+
+header .containerheader .headercontent {
+  width: 100%;
+}
+
+header .containerheader .headercontent .containerheadercontent {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0rem;
+}
+
+header .containerheader .headercontent .containerheadercontent .search form {
+  width: 150%;
+  max-width: 850px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+header .containerheader .headercontent .containerheadercontent .search form button {
+  position: absolute;
+  background-color: transparent;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+  border: none;
+  left: 0;
+}
+
+header .containerheader .headercontent .containerheadercontent .search form input {
+  width: 100%;
+  padding: .4rem .2rem .4rem 1.5rem;
+  background-color: transparent;
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+
+header .containerheader .headercontent .containerheadercontent .logorexpeita {
+  width: 160px;
+}
+
+header .containerheader .headercontent .containerheadercontent .linksheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 35px;
+}
+
+header .containerheader .headercontent .containerheadercontent .linksheader .truckdelivery {
+  cursor: pointer;
+}
+
+header .containerheader .headercontent .containerheadercontent .linksheader .truckdelivery .rastrear {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 510;
+}
+
+header .containerheader .headercontent .containerheadercontent .linksheader .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+header .containerheader .headercontent .containerheadercontent .linksheader .login .loginregister {
+  font-family: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 510;
+}
+
+header .containerheader .headercontent .containerheadercontent .linksheader .login .logindropdown {
+  cursor: auto;
+  display: none;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999;
+  top: 100%;
+  width: 400px;
+  height: 120px;
+  right: 0;
+  background-color: #efefef;
+  padding: 1rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+header .containerheader .headercontent .containerheadercontent .linksheader .login .logindropdown .loginin {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 1rem 0rem;
+  margin-bottom: .6rem;
+  cursor: pointer;
+}
+
+header .containerheader .headercontent .containerheadercontent .linksheader .login .logindropdown p a {
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+header .containerheader .headercontent .containerheadercontent .linksheader .login .logindropdown p a:visited {
+  color: #000;
+}
+
+header .containerheader .headercontent .containerheadercontent .linksheader .searchmobile {
+  display: none;
+}
+
+header .containerheader .headercontent .containerheadercontent .linksheader .cart-button {
+  cursor: pointer;
+}
+
+header .containerheader .headercontent .containerheadercontent .linksheader .cart-button .cartcontent {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  width: 25%;
+  height: 100%;
+  background-color: #d7d7d7;
+}
+
+header .containerheader .headercontent .containerheadercontent .menumobileheader {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .containerheader .headercontent .containerheadercontent .menumobileheader .truckdelivery {
+  cursor: pointer;
+}
+
+header .containerheader .headercontent .containerheadercontent .menumobileheader .truckdelivery .rastrear {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 510;
+}
+
+header .containerheader .headercontent .containerheadercontent .menumobileheader .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+header .containerheader .headercontent .containerheadercontent .menumobileheader .login a {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 510;
+}
+
+header .containerheader .headercontent .containerheadercontent .menumobileheader .login a:nth-child(2) {
+  padding-left: 10px;
+}
+
+header .containerheader .headercontent .containerheadercontent .menumobileheader .login a:nth-child(1) {
+  padding-right: 15px;
+  border-right: 1px solid #000;
+}
+
+header .containerheader .headercontent .containerheadercontent .menumobileheader .login a:visited {
+  color: #000;
+}
+
+header .containerheader .dropdownheader {
+  width: 100%;
+}
+
+header .containerheader .dropdownheader .navdropdown {
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-bottom: .4rem;
+}
+
+header .containerheader .dropdownheader .navdropdown .classtotal {
+  display: none;
+}
+
+header .containerheader .dropdownheader .navdropdown ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .containerheader .dropdownheader .navdropdown ul .category {
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+header .containerheader .dropdownheader .navdropdown ul .category:hover {
+  background-color: #ffffff;
+}
+
+header .containerheader .dropdownheader .navdropdown ul .category a {
+  color: #000;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+header .containerheader .dropdownheader .navdropdown ul .dropdownprodutos, header .containerheader .dropdownheader .navdropdown ul .dropdowncasacos, header .containerheader .dropdownheader .navdropdown ul .dropdowncalças,
+header .containerheader .dropdownheader .navdropdown ul .dropdownacessorios, header .containerheader .dropdownheader .navdropdown ul .dropdownbones, header .containerheader .dropdownheader .navdropdown ul .dropdownmochilas,
+header .containerheader .dropdownheader .navdropdown ul .dropdownall {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .containerheader .dropdownheader .navdropdown ul .dropdownprodutos:hover > ul, header .containerheader .dropdownheader .navdropdown ul .dropdowncasacos:hover > ul, header .containerheader .dropdownheader .navdropdown ul .dropdowncalças:hover > ul,
+header .containerheader .dropdownheader .navdropdown ul .dropdownacessorios:hover > ul, header .containerheader .dropdownheader .navdropdown ul .dropdownbones:hover > ul, header .containerheader .dropdownheader .navdropdown ul .dropdownmochilas:hover > ul,
+header .containerheader .dropdownheader .navdropdown ul .dropdownall:hover > ul {
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+header .containerheader .dropdownheader .navdropdown ul .dropdownprodutos .dropdownmanual, header .containerheader .dropdownheader .navdropdown ul .dropdowncasacos .dropdownmanual, header .containerheader .dropdownheader .navdropdown ul .dropdowncalças .dropdownmanual,
+header .containerheader .dropdownheader .navdropdown ul .dropdownacessorios .dropdownmanual, header .containerheader .dropdownheader .navdropdown ul .dropdownbones .dropdownmanual, header .containerheader .dropdownheader .navdropdown ul .dropdownmochilas .dropdownmanual,
+header .containerheader .dropdownheader .navdropdown ul .dropdownall .dropdownmanual {
+  display: none;
+  position: absolute;
+  z-index: 888;
+  top: 100%;
+  width: 100%;
+  left: 0%;
+  background-color: #efefef;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+header .containerheader .dropdownheader .navdropdown ul .dropdownprodutos .dropdownmanual li, header .containerheader .dropdownheader .navdropdown ul .dropdowncasacos .dropdownmanual li, header .containerheader .dropdownheader .navdropdown ul .dropdowncalças .dropdownmanual li,
+header .containerheader .dropdownheader .navdropdown ul .dropdownacessorios .dropdownmanual li, header .containerheader .dropdownheader .navdropdown ul .dropdownbones .dropdownmanual li, header .containerheader .dropdownheader .navdropdown ul .dropdownmochilas .dropdownmanual li,
+header .containerheader .dropdownheader .navdropdown ul .dropdownall .dropdownmanual li {
+  display: block;
+  padding: .5rem .3rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+/*  FONTE  */
+/*  FUNCTIONS MIXINS SASS  */
+.painelmain {
+  height: 79.4vh;
+  background-image: url(../img/imgbackground.jpg);
+  background-repeat: no-repeat;
+  background-position: top top;
+  background-size: cover;
+  position: relative;
+}
+
+.painelmain .painelcontentmain {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 1200px;
+  opacity: .94;
+  background-color: #000;
+  -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 30% 100%);
+          clip-path: polygon(50% 0, 100% 0, 100% 100%, 30% 100%);
+}
+
+#cart-container {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  height: 100%;
+  width: 300px;
+  right: 0;
+  top: 0;
+  background-color: #f5f5f5;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#cart-container .header-container-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #000;
+}
+
+#cart-container .header-container-cart h1 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 550;
+  margin-left: 1rem;
+}
+
+#cart-container p {
+  text-align: center;
+}
+
+#cart-container.active {
+  display: block;
+  -webkit-animation: showingCart .3s ease-in-out;
+          animation: showingCart .3s ease-in-out;
+}
+
+main .category1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 400px;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+main .category1 .bone, main .category1 .camisa, main .category1 .acessorio {
+  position: relative;
+  background-image: url(../img/imgcamisarx.jpg);
+  background-repeat: no-repeat;
+  background-position: top bottom;
+  background-size: cover;
+  width: 600px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.85) 35px -310px 256px 105px inset;
+          box-shadow: rgba(0, 0, 0, 0.85) 35px -310px 256px 105px inset;
+  cursor: pointer;
+}
+
+main .category1 .bone .textcat2, main .category1 .camisa .textcat2, main .category1 .acessorio .textcat2 {
+  position: absolute;
+  bottom: 5%;
+  left: 45%;
+  text-align: center;
+}
+
+main .category1 .bone .textcat2 h1, main .category1 .camisa .textcat2 h1, main .category1 .acessorio .textcat2 h1 {
+  font-size: 2.3rem;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 600;
+}
+
+main .category1 .bone .textcat2 a, main .category1 .camisa .textcat2 a, main .category1 .acessorio .textcat2 a {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+}
+
+main .category1 .bone .textcat2 a::after, main .category1 .bone .textcat2 a a::before, main .category1 .camisa .textcat2 a::after, main .category1 .camisa .textcat2 a a::before, main .category1 .acessorio .textcat2 a::after, main .category1 .acessorio .textcat2 a a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  background-color: #fff;
+}
+
+main .category1 .bone .textcat2 a::after, main .category1 .camisa .textcat2 a::after, main .category1 .acessorio .textcat2 a::after {
+  left: 0px;
+}
+
+main .category1 .bone .textcat2 a::before, main .category1 .camisa .textcat2 a::before, main .category1 .acessorio .textcat2 a::before {
+  right: 0px;
+}
+
+main .category1 .bone:hover .textcat2 a::after,
+main .category1 .acessorio:hover .textcat2 a::after,
+main .category1 .camisa:hover .textcat2 a::after {
+  width: 100%;
+}
+
+main .category1 .bone {
+  background-image: url(../img/imgbonerx.jpg);
+  background-position: center;
+}
+
+main .category1 .acessorio {
+  background-image: url(../img/bagrx.jpg);
+  background-position: center;
+}
+
+main .category2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 700px;
+  margin: .5rem 0rem 3rem 0rem;
+  padding: 1rem;
+}
+
+main .category2 .kimono, main .category2 .casaco {
+  position: relative;
+  background-image: url(../img/kimonorx.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  width: 970px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.85) 35px -310px 256px 105px inset;
+          box-shadow: rgba(0, 0, 0, 0.85) 35px -310px 256px 105px inset;
+  cursor: pointer;
+}
+
+main .category2 .kimono .textcat2, main .category2 .casaco .textcat2 {
+  position: absolute;
+  bottom: 5%;
+  left: 45%;
+  text-align: center;
+}
+
+main .category2 .kimono .textcat2 h1, main .category2 .casaco .textcat2 h1 {
+  font-size: 2.3rem;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 600;
+}
+
+main .category2 .kimono .textcat2 a, main .category2 .casaco .textcat2 a {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+}
+
+main .category2 .kimono .textcat2 a::after, main .category2 .kimono .textcat2 a a::before, main .category2 .casaco .textcat2 a::after, main .category2 .casaco .textcat2 a a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  background-color: #fff;
+}
+
+main .category2 .kimono .textcat2 a::after, main .category2 .casaco .textcat2 a::after {
+  left: 0px;
+}
+
+main .category2 .kimono .textcat2 a::before, main .category2 .casaco .textcat2 a::before {
+  right: 0px;
+}
+
+main .category2 .kimono:hover .textcat2 a::after, main .category2 .kimono:hover .textcat2 a::before {
+  width: 100%;
+}
+
+main .category2 .casaco {
+  background-image: url(../img/casacorx.jpg);
+}
+
+main .category2 .casaco:hover .textcat2 a::after, main .category2 .casaco:hover .textcat2 a::before {
+  width: 100%;
+}
+
+@-webkit-keyframes showingCart {
+  from {
+    -webkit-transform: translate3d(150px, 0, 0);
+            transform: translate3d(150px, 0, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes showingCart {
+  from {
+    -webkit-transform: translate3d(150px, 0, 0);
+            transform: translate3d(150px, 0, 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+/*  FONTE  */
+/*  FUNCTIONS MIXINS SASS  */
+.doubts .containerdoubts {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 7rem 0rem;
+}
+
+.doubts .containerdoubts h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.doubts .containerdoubts .cardsdoubts {
+  margin-top: 4rem;
+}
+
+.doubts .containerdoubts .cardsdoubts .cardquestion:nth-child(-n + 4) {
+  border-bottom: 2px solid #e9e8e8;
+}
+
+.doubts .containerdoubts .cardsdoubts .cardquestion .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.2rem;
+  cursor: pointer;
+}
+
+.doubts .containerdoubts .cardsdoubts .cardquestion .question h2 {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.doubts .containerdoubts .cardsdoubts .cardquestion .question:hover {
+  background-color: #f6f6f6;
+}
+
+.doubts .containerdoubts .cardsdoubts .cardquestion .question:hover h2 {
+  text-decoration: underline;
+}
+
+.doubts .containerdoubts .cardsdoubts .cardquestion .answer {
+  display: none;
+  padding: 1.4rem 0rem 2rem 2.2rem;
+}
+
+.doubts .containerdoubts .cardsdoubts .cardquestion .answer p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 450;
+  color: #000;
+  margin-top: .6rem;
+}
+
+.doubts .containerdoubts .cardsdoubts .cardquestion .answer p span {
+  color: #008000;
+  font-weight: bold;
+}
+
+.doubts .containerdoubts .cardsdoubts .cardquestion .answer.active {
+  display: block;
+}
+
+.doubts .containerdoubts .cardsdoubts .cardquestion .answer1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+/*  FONTE  */
+/*  FUNCTIONS MIXINS SASS  */
+.containerlogin {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 200px;
+}
+
+.containerlogin .login h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 550;
+  font-size: 2rem;
+  margin: 5rem 0rem 1rem 0rem;
+}
+
+.containerlogin .login .coolinput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  position: static;
+  max-width: 340px;
+  margin-bottom: 1rem;
+}
+
+.containerlogin .login .coolinput label.text {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 700;
+  position: relative;
+  top: 0.5rem;
+  margin: 0 0 0 7px;
+  padding: 0 3px;
+  background: #ffffff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.containerlogin .login .coolinput input[type=text].input, .containerlogin .login .coolinput input[type=password].input {
+  padding: 11px 10px;
+  font-size: .9rem;
+  border: 2px #000000 solid;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+.containerlogin .login .coolinput input[type=text].input:focus, .containerlogin .login .coolinput input[type=password].input:focus {
+  outline: none;
+}
+
+.containerlogin .login .forgetpassword {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: .8rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.containerlogin .login button {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 1.6rem 0rem;
+  margin: 2rem 0rem .6rem 0rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.containerlogin .register h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 550;
+  font-size: 1.7rem;
+  margin: 5rem 0rem 1rem 0rem;
+}
+
+.containerlogin .register p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 450;
+  font-size: 1.2rem;
+  margin-bottom: 3.5rem;
+}
+
+.containerlogin .register .buttoncontinue {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 1.6rem 10rem;
+  margin: 2rem 0rem .6rem 0rem;
+  cursor: pointer;
+}
+
+/*  FONTE  */
+/*  FUNCTIONS MIXINS SASS  */
+.containerregister {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerregister .inputsregister {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.containerregister .inputsregister form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 200px;
+}
+
+.containerregister .inputsregister form .registerdadospessoais h1, .containerregister .inputsregister form .registerentrega h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 550;
+  font-size: 2rem;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.containerregister .inputsregister form .registerdadospessoais .coolinput, .containerregister .inputsregister form .registerentrega .coolinput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  position: static;
+  max-width: 850px;
+  margin-bottom: 1rem;
+}
+
+.containerregister .inputsregister form .registerdadospessoais .coolinput label.text, .containerregister .inputsregister form .registerentrega .coolinput label.text {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 700;
+  position: relative;
+  top: 0.5rem;
+  margin: 0 0 0 7px;
+  padding: 0 3px;
+  background: #ffffff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.containerregister .inputsregister form .registerdadospessoais .coolinput input[type=text].input, .containerregister .inputsregister form .registerdadospessoais .coolinput input[type=password].input, .containerregister .inputsregister form .registerdadospessoais .coolinput input[type=date].input, .containerregister .inputsregister form .registerentrega .coolinput input[type=text].input, .containerregister .inputsregister form .registerentrega .coolinput input[type=password].input, .containerregister .inputsregister form .registerentrega .coolinput input[type=date].input {
+  padding: 11px 10px;
+  font-size: .9rem;
+  border: 2px #000000 solid;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+.containerregister .inputsregister form .registerdadospessoais .coolinput input[type=text].input:focus, .containerregister .inputsregister form .registerdadospessoais .coolinput input[type=password].input:focus, .containerregister .inputsregister form .registerdadospessoais .coolinput input[type=date].input:focus, .containerregister .inputsregister form .registerentrega .coolinput input[type=text].input:focus, .containerregister .inputsregister form .registerentrega .coolinput input[type=password].input:focus, .containerregister .inputsregister form .registerentrega .coolinput input[type=date].input:focus {
+  outline: none;
+}
+
+.containerregister .inputsregister form .registerdadospessoais .cpfdata, .containerregister .inputsregister form .registerdadospessoais .password, .containerregister .inputsregister form .registerdadospessoais .numerocomplemento, .containerregister .inputsregister form .registerentrega .cpfdata, .containerregister .inputsregister form .registerentrega .password, .containerregister .inputsregister form .registerentrega .numerocomplemento {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.containerregister .inputsregister form .registerdadospessoais .cpfdata .coolinput, .containerregister .inputsregister form .registerdadospessoais .password .coolinput, .containerregister .inputsregister form .registerdadospessoais .numerocomplemento .coolinput, .containerregister .inputsregister form .registerentrega .cpfdata .coolinput, .containerregister .inputsregister form .registerentrega .password .coolinput, .containerregister .inputsregister form .registerentrega .numerocomplemento .coolinput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 280px;
+  position: static;
+  margin-bottom: 1rem;
+}
+
+.containerregister .inputsregister form .registerdadospessoais .registerentrega h1, .containerregister .inputsregister form .registerentrega .registerentrega h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 550;
+  font-size: 2rem;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.containerregister .inputsregister form .registerdadospessoais .concluircadastro, .containerregister .inputsregister form .registerentrega .concluircadastro {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 1.2rem 2rem;
+  margin: 1rem 0rem .6rem 0rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.containerregister .inputsregister form .registerdadospessoais .promotions, .containerregister .inputsregister form .registerentrega .promotions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.containerregister .inputsregister form .registerdadospessoais .promotions p, .containerregister .inputsregister form .registerentrega .promotions p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.containerregister .inputsregister form .registerdadospessoais .logininregister, .containerregister .inputsregister form .registerentrega .logininregister {
+  margin-top: 1rem;
+}
+
+.containerregister .inputsregister form .registerdadospessoais .logininregister p, .containerregister .inputsregister form .registerentrega .logininregister p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.containerregister .inputsregister form .registerdadospessoais .logininregister p a, .containerregister .inputsregister form .registerentrega .logininregister p a {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.containerregister .inputsregister form .registerdadospessoais .logininregister p a:visited, .containerregister .inputsregister form .registerentrega .logininregister p a:visited {
+  color: #000;
+}
+
+.span-required {
+  display: none;
+}
+
+/*  FONTE  */
+/*  FUNCTIONS MIXINS SASS  */
+.introducao {
+  max-width: 1450px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.introducao h1 {
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.music {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  background-image: url(../img/favelavive5g.jpg);
+  background-repeat: no-repeat;
+  background-position: 92% 8%;
+  background-size: cover;
+  height: 500px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.85) 35px -510px 156px 15px inset;
+          box-shadow: rgba(0, 0, 0, 0.85) 35px -510px 156px 15px inset;
+}
+
+.music h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 650;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.music p {
+  font-family: "Inter", sans-serif;
+  font-weight: 550;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.music a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+/*  FONTE  */
+/*  FUNCTIONS MIXINS SASS  */
+footer {
+  padding: 7rem 7rem 1rem 7rem;
+  background-color: #000;
+  color: #fff;
+}
+
+footer .containerfooter {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #a3a2a2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .containerfooter img {
+  height: 100px;
+}
+
+footer .containerfooter .empresa ul, footer .containerfooter .site ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .containerfooter .empresa ul h1, footer .containerfooter .site ul h1 {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer .containerfooter .empresa ul li a, footer .containerfooter .site ul li a {
+  color: #a3a2a2;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer .containerfooter .empresa ul li a:visited, footer .containerfooter .site ul li a:visited {
+  color: #a3a2a2;
+}
+
+footer .containerfooter .empresa ul li a:hover, footer .containerfooter .site ul li a:hover {
+  color: #fff;
+}
+
+footer .containerfooter .contact h1 {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer .containerfooter .contact .email, footer .containerfooter .contact .phone, footer .containerfooter .contact .map, footer .containerfooter .contact .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+footer .containerfooter .contact .email p, footer .containerfooter .contact .phone p, footer .containerfooter .contact .map p, footer .containerfooter .contact .company p {
+  font-family: "Montserrat", sans-serif;
+  color: #a3a2a2;
+}
+
+footer .containerfooter .contact .email p:hover, footer .containerfooter .contact .phone p:hover, footer .containerfooter .contact .map p:hover, footer .containerfooter .contact .company p:hover {
+  color: #fff;
+}
+
+footer .titlefooter {
+  color: #fff;
+}
+
+footer .developedby {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+footer .developedby p {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: .9rem;
+}
+
+footer .developedby p a {
+  color: #fff;
+  position: relative;
+}
+
+footer .developedby p a::after, footer .developedby p a a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  background-color: #fff;
+}
+
+footer .developedby p a::after {
+  left: 0px;
+}
+
+footer .developedby p a::before {
+  right: 0px;
+}
+
+footer .developedby p a:hover::after {
+  width: 100%;
+}
+
+/*  FONTE  */
+/*  FUNCTIONS MIXINS SASS  */
+@media (min-width: 1023px) and (max-width: 1290px) {
+  header .containerheader .headercontent .containerheadercontent {
+    padding: 0 20px;
+  }
+  header .containerheader .dropdownheader .navdropdown ul .category {
+    gap: 9px;
+  }
+  .painelmain .painelcontentmain {
+    width: 300px;
+  }
+  main .category1 {
+    height: 400px;
+  }
+  main .category1 .bone, main .category1 .camisa, main .category1 .acessorio {
+    width: 300px;
+  }
+  main .category1 .bone .textcat2, main .category1 .camisa .textcat2, main .category1 .acessorio .textcat2 {
+    left: 28%;
+  }
+  main .category1 .bone {
+    background-image: url(../img/imgbonerx.jpg);
+    margin-right: 1rem;
+  }
+  main .category1 .acessorio {
+    background-image: url(../img/bagrx.jpg);
+  }
+  main .category2 {
+    height: 600px;
+  }
+  main .category2 .kimono, main .category2 .casaco {
+    width: 470px;
+  }
+  main .category2 .casaco {
+    background-image: url(../img/casacorx.jpg);
+  }
+  footer {
+    padding: 5rem 3rem 1rem 3rem;
+  }
+}
+
+@media (max-width: 769px) {
+  header .containerheader .headercontent .containerheadercontent .hamburger {
+    display: block;
+    z-index: 999;
+    -webkit-transition: .4s;
+    transition: .4s;
+    margin-left: 10px;
+  }
+  header .containerheader .headercontent .containerheadercontent .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  header .containerheader .headercontent .containerheadercontent .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  header .containerheader .headercontent .containerheadercontent .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  header .containerheader .headercontent .containerheadercontent .search {
+    display: none;
+  }
+  header .containerheader .headercontent .containerheadercontent .logorexpeita {
+    width: 120px;
+  }
+  header .containerheader .headercontent .containerheadercontent .linksheader .choosedropdown {
+    display: none;
+  }
+  header .containerheader .headercontent .containerheadercontent .linksheader .searchmobile {
+    display: block;
+  }
+  header .containerheader .headercontent .containerheadercontent .linksheader .cart-button {
+    margin-right: 10px;
+  }
+  header .containerheader .headercontent .containerheadercontent .menumobileheader .login a {
+    color: #000;
+  }
+  header .containerheader .headercontent .containerheadercontent .menumobileheader .login a:visited {
+    color: #000;
+  }
+  header .containerheader .headercontent .containerheadercontent .menumobileheader.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    position: absolute;
+    z-index: 900;
+    top: 77px;
+    right: 0;
+    height: 20%;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    -webkit-animation: openingMenu .3s ease-in-out;
+            animation: openingMenu .3s ease-in-out;
+  }
+  header .containerheader .dropdownheader .navdropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .containerheader .dropdownheader .navdropdown .classtotal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    padding-bottom: 1rem;
+  }
+  header .containerheader .dropdownheader .navdropdown .classtotal h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 550;
+  }
+  header .containerheader .dropdownheader .navdropdown .classtotal .fa-chevron-up {
+    display: none;
+  }
+  header .containerheader .dropdownheader .navdropdown .classtotal.active .fa-chevron-up {
+    display: block;
+  }
+  header .containerheader .dropdownheader .navdropdown .classtotal.active .fa-chevron-down {
+    display: none;
+  }
+  header .containerheader .dropdownheader .navdropdown ul {
+    display: none;
+  }
+  header .containerheader .dropdownheader .navdropdown ul.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    z-index: 888;
+    position: absolute;
+    width: 80%;
+    top: 130px;
+    height: 70%;
+    background-color: #fff;
+    color: #000;
+  }
+  .painelmain {
+    height: 60vh;
+    background-position: 32% 68%;
+  }
+  .painelmain .painelcontentmain {
+    display: none;
+  }
+  main .category1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 1000px;
+  }
+  main .category1 .bone, main .category1 .camisa, main .category1 .acessorio {
+    width: 300px;
+    height: 300px;
+  }
+  main .category1 .bone .textcat2, main .category1 .camisa .textcat2, main .category1 .acessorio .textcat2 {
+    left: 30%;
+  }
+  main .category1 .acessorio .textcat2 {
+    left: 20%;
+  }
+  main .category2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 950px;
+    margin: 0rem;
+  }
+  main .category2 .kimono, main .category2 .casaco {
+    height: 450px;
+  }
+  main .category2 .kimono .textcat2, main .category2 .casaco .textcat2 {
+    left: 17%;
+  }
+  main .category2 .kimono .textcat2 {
+    left: 25%;
+  }
+  main .category2 .casaco {
+    background-image: url(../img/casacorx.jpg);
+  }
+  .introducao {
+    padding: .8rem;
+  }
+  .introducao h1 {
+    font-size: 1.7rem;
+  }
+  .introducao p {
+    font-size: 1rem;
+    max-width: 50ch;
+  }
+  .music {
+    padding: 1rem;
+    text-align: center;
+    background-position: 50% 50%;
+  }
+  .music h1 {
+    font-size: 1.5rem;
+  }
+  footer {
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+  }
+  footer .containerfooter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 35px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .containerfooter img {
+    width: 160px;
+  }
+  .containerlogin {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    margin: 0rem 0rem 0rem 1rem;
+  }
+  .containerlogin .login h1 {
+    margin: 3rem 0rem 0rem 0rem;
+  }
+  .containerlogin .login .coolinput {
+    width: 270px;
+  }
+  .containerlogin .login button {
+    width: 80%;
+  }
+  .containerlogin .register h1 {
+    margin: 0rem 0rem 1rem 0rem;
+  }
+  .containerlogin .register p {
+    font-size: 1rem;
+    max-width: 28ch;
+  }
+  .containerlogin .register .buttoncontinue {
+    width: 50%;
+    padding: 1.6rem 6rem;
+    margin: 2rem 0rem .6rem 0rem;
+  }
+  .containerregister {
+    margin-left: 1rem;
+  }
+  .containerregister .inputsregister {
+    margin-top: 1.5rem;
+  }
+  .containerregister .inputsregister form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+  }
+  .containerregister .inputsregister form .registerdadospessoais h1, .containerregister .inputsregister form .registerentrega h1 {
+    font-size: 1.6rem;
+  }
+  .containerregister .inputsregister form .registerdadospessoais .coolinput, .containerregister .inputsregister form .registerentrega .coolinput {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin-bottom: 0rem;
+  }
+  .containerregister .inputsregister form .registerdadospessoais .cpfdata, .containerregister .inputsregister form .registerdadospessoais .password, .containerregister .inputsregister form .registerdadospessoais .numerocomplemento, .containerregister .inputsregister form .registerentrega .cpfdata, .containerregister .inputsregister form .registerentrega .password, .containerregister .inputsregister form .registerentrega .numerocomplemento {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0px;
+  }
+  .containerregister .inputsregister form .registerdadospessoais .cpfdata .coolinput, .containerregister .inputsregister form .registerdadospessoais .password .coolinput, .containerregister .inputsregister form .registerdadospessoais .numerocomplemento .coolinput, .containerregister .inputsregister form .registerentrega .cpfdata .coolinput, .containerregister .inputsregister form .registerentrega .password .coolinput, .containerregister .inputsregister form .registerentrega .numerocomplemento .coolinput {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+  }
+  .containerregister .inputsregister form .registerdadospessoais .concluircadastro, .containerregister .inputsregister form .registerentrega .concluircadastro {
+    width: 90%;
+  }
+  .mainproduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    padding: .5rem;
+  }
+  .mainproduct .imgproduto .divminifotos img {
+    display: none;
+  }
+  .mainproduct .imgproduto .imgprincipalproduct {
+    width: 100%;
+  }
+  .mainproduct .textproduto {
+    margin-left: .8rem;
+  }
+}
+
+@media (max-width: 321px) {
+  header .containerheader .dropdownheader .navdropdown ul.active {
+    top: 110px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 629px) and (max-width: 768px) {
+  main .category2 .kimono .textcat2, main .category2 .casaco .textcat2 {
+    left: 37%;
+  }
+  main .category2 .kimono .textcat2 {
+    left: 40%;
+  }
+  .introducao p {
+    max-width: 80ch;
+  }
+  .containerlogin {
+    gap: 0px;
+  }
+  .containerlogin .login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerlogin .login h1 {
+    margin: 2rem 0rem 1rem 0rem;
+  }
+  .containerlogin .login .coolinput {
+    width: 90%;
+    max-width: 700px;
+  }
+  .containerlogin .login button {
+    width: 30%;
+  }
+  .containerlogin .register {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerlogin .register h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 550;
+    font-size: 1.7rem;
+    margin: 2rem 0rem 1rem 0rem;
+  }
+  .containerlogin .register p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 450;
+    font-size: 1.2rem;
+    max-width: 55ch;
+  }
+  .containerlogin .register .buttoncontinue {
+    background-color: #000;
+    color: #fff;
+    width: 30%;
+    padding: 1.6rem 5rem;
+    margin: 0rem 0rem .6rem 0rem;
+    cursor: pointer;
+  }
+  .containerregister .inputsregister {
+    margin-top: 1rem;
+  }
+  .containerregister .inputsregister form {
+    gap: 40px;
+  }
+  .containerregister .inputsregister form .registerdadospessoais .coolinput, .containerregister .inputsregister form .registerentrega .coolinput {
+    width: 90%;
+  }
+  .containerregister .inputsregister form .registerdadospessoais .cpfdata, .containerregister .inputsregister form .registerdadospessoais .password, .containerregister .inputsregister form .registerdadospessoais .numerocomplemento, .containerregister .inputsregister form .registerentrega .cpfdata, .containerregister .inputsregister form .registerentrega .password, .containerregister .inputsregister form .registerentrega .numerocomplemento {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90%;
+    gap: 10px;
+  }
+  .containerregister .inputsregister form .registerdadospessoais .concluircadastro, .containerregister .inputsregister form .registerentrega .concluircadastro {
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes openingMenu {
+  from {
+    right: -100%;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes openingMenu {
+  from {
+    right: -100%;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+/*  FONTE  */
+/*  FUNCTIONS MIXINS SASS  */
+.mainproduct {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainproduct .imgproduto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainproduct .imgproduto .divminifotos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.mainproduct .imgproduto .divminifotos img {
+  cursor: pointer;
+  width: 100px;
+}
+
+.mainproduct .imgproduto img {
+  cursor: pointer;
+}
+
+.mainproduct .textproduto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.mainproduct .textproduto .titletextproduct {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 570;
+  font-size: 1.7rem;
+}
+
+.mainproduct .textproduto .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 20px;
+}
+
+.mainproduct .textproduto .price p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+
+.mainproduct .textproduto .price .pricedescont {
+  text-decoration: line-through;
+  color: #ff0000;
+  font-size: 1.1rem;
+}
+
+.mainproduct .textproduto p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+}
+
+.mainproduct .textproduto .sizes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+
+.mainproduct .textproduto .sizes .sizebutton {
+  cursor: pointer;
+  padding: .7rem 1rem;
+}
+
+.mainproduct .textproduto .sizes .sizebutton.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.mainproduct .textproduto .metricas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.mainproduct .textproduto .buy {
+  padding: 1rem 2rem;
+  width: 60%;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.mainproduct .textproduto .infosproduct .truckproduct, .mainproduct .textproduto .infosproduct .givebackproduct, .mainproduct .textproduto .infosproduct .paymentsafeproduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+.mainproduct .textproduto .descriptionproduct h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 550;
+}
+
+.mainproduct .textproduto .descriptionproduct p {
+  margin: 10px 0;
+}
+/*# sourceMappingURL=styles.css.map */

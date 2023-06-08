@@ -1,0 +1,33 @@
+/*  FONTE  */
+$font-inter: 'Inter', sans-serif;
+$font-montserrat: 'Montserrat', sans-serif;
+$font-poppins: 'Poppins', sans-serif;
+
+
+/*  FUNCTIONS MIXINS SASS  */
+@mixin dropdownheader {
+   position: relative;
+   display: flex;
+   align-items: center;
+   &:hover > ul {
+     display: inherit;
+     flex-direction: column;
+     gap: 5px;
+   }
+   .dropdownmanual {
+     display: none;
+     position: absolute;
+     z-index: 888;
+     top: 100%;
+     width: 100%;
+     left: 0%;
+     background-color: #efefef;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+     li {
+      display: block;
+      padding: .5rem .3rem;
+      font-family: $font-montserrat;
+      text-align: center;
+     }
+   }
+}

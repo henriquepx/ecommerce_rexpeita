@@ -1,0 +1,101 @@
+@import '../abstract/variables';
+
+footer {
+  padding: 7rem 7rem 1rem 7rem;
+  background-color: #000;
+  color: #fff;
+  
+  .containerfooter {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #a3a2a2;
+
+    display: flex;
+    justify-content: space-between;
+    img {
+      height: 100px;
+    }
+    .empresa ul, .site ul {
+      display: flex;
+      flex-direction: column;
+    }
+    .empresa ul h1, .site ul h1 {
+      font-size: 1.2rem;
+      font-family: $font-montserrat;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .empresa ul li a, .site ul li a{
+      color: #a3a2a2;
+      font-family: $font-montserrat;
+      &:visited {
+        color: #a3a2a2;
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+    .contact {
+      h1 {
+        font-size: 1.2rem;
+        font-family: $font-montserrat;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+      .email, .phone, .map, .company {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+      .email p, .phone p, .map p, .company p {
+        font-family: $font-montserrat;
+        color: #a3a2a2;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .titlefooter {
+    color: #fff;
+  }
+  .developedby {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    p {
+      font-family: $font-montserrat;
+      color: #fff;
+      font-weight: 500;
+      font-size: .9rem;
+      a {
+        color: #fff;
+        position: relative;
+          &::after, a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            transition: .4s;
+            background-color: #fff;
+          }
+          &::after {
+            left: 0px;
+          }
+        &::before {
+            right: 0px;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    } 
+  }
+
+}

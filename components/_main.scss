@@ -1,0 +1,192 @@
+@import '../abstract/variables';
+
+.painelmain {
+  height: 79.4vh;
+  background-image: url(../img/imgbackground.jpg);
+  background-repeat: no-repeat;
+  background-position: top top;
+  background-size: cover;
+  position: relative;
+  .painelcontentmain {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 1200px;
+    opacity: .94;
+    background-color: #000;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 30% 100%);
+  }
+}
+
+#cart-container {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  height: 100%;
+  width: 300px;
+  right: 0;
+  top: 0;
+  background-color: #f5f5f5;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  .header-container-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #000;
+    h1 {
+      color: #000000;
+      font-family: $font-montserrat;
+      font-weight: 550;
+      margin-left: 1rem;
+    }
+  }
+  p {
+    text-align: center;
+  }
+} #cart-container.active {
+  display: block;
+  animation: showingCart .3s ease-in-out;
+}
+
+main {
+  .category1 {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    margin-top: 1rem;
+    padding: 1rem;
+    .bone, .camisa, .acessorio {
+      position: relative;
+      background-image: url(../img/imgcamisarx.jpg);
+      background-repeat: no-repeat;
+      background-position: top bottom;
+      background-size: cover;
+      width: 600px;
+      box-shadow: rgba(0, 0, 0, 0.85) 35px -310px 256px 105px inset;
+      cursor: pointer;
+      .textcat2 {
+        position: absolute;
+        bottom: 5%;
+        left: 45%;
+        text-align: center;
+        h1 {
+          font-size: 2.3rem;
+          font-family: $font-montserrat;
+          color: #fff;
+          font-weight: 600;
+        }
+        a {
+          font-size: 1rem;
+          font-family: $font-montserrat;
+          color: #fff;
+          font-weight: 600;
+          
+          position: relative;
+          &::after, a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            transition: .4s;
+            background-color: #fff;
+          }
+          &::after {
+            left: 0px;
+          }
+          &::before {
+            right: 0px;
+          }
+        }
+      }
+    }
+    .bone:hover .textcat2 a::after, 
+    .acessorio:hover .textcat2 a::after,
+     .camisa:hover .textcat2 a::after {
+      width: 100%;
+    }
+    .bone {
+      background-image: url(../img/imgbonerx.jpg);
+      background-position: center;
+    }
+    .acessorio {
+      background-image: url(../img/bagrx.jpg);
+      background-position: center;
+    }
+  }
+  .category2 {
+    display: flex;
+    justify-content: space-between;
+    height: 700px;
+
+    margin: .5rem 0rem 3rem 0rem;
+    padding: 1rem;
+    .kimono, .casaco {
+      position: relative;
+      background-image: url(../img/kimonorx.jpg);
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      width: 970px;
+      box-shadow: rgba(0, 0, 0, 0.85) 35px -310px 256px 105px inset;
+      cursor: pointer;
+      .textcat2 {
+        position: absolute;
+        bottom: 5%;
+        left: 45%;
+        text-align: center;
+        h1 {
+          font-size: 2.3rem;
+          font-family: $font-montserrat;
+          color: #fff;
+          font-weight: 600;
+        }
+        a {
+          font-size: 1rem;
+          font-family: $font-montserrat;
+          color: #fff;
+          font-weight: 600;
+          
+          position: relative;
+          &::after, a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            transition: .4s;
+            background-color: #fff;
+          }
+          &::after {
+            left: 0px;
+          }
+          &::before {
+            right: 0px;
+          }
+        }
+      }
+    }
+    .kimono:hover .textcat2 a::after, .kimono:hover .textcat2 a::before {
+      width: 100%;
+    }
+    .casaco {
+      background-image: url(../img/casacorx.jpg);
+    }
+    .casaco:hover .textcat2 a::after, .casaco:hover .textcat2 a::before {
+      width: 100%;
+    }
+  }
+}
+
+@keyframes showingCart {
+  from {
+    transform: translate3d(150px, 0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rexpeita</title>
+  <link rel="icon" href="./img/logo.png">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;800&family=Montserrat:wght@100;300;400;600;900&family=Poppins:ital,wght@0,200;0,300;0,500;1,100&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="containerheader">
+      <div class="headercontent">
+        <div class="containerheadercontent">
+          <div class="search">
+            <form>
+              <button id="search_button">
+                <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></i>
+              </button>
+              <input type="text" placeholder="Buscar..." />
+            </form>
+          </div>
+          <a href="index.html"><img class="logorexpeita" src="./img/logo.png" alt="Logo da Rexpeita"></a>
+          <div class="linksheader">
+            <div class="truckdelivery">
+              <h1 class="rastrear">Rastrear pedido</h1>
+            </div>
+            <div class="cart-button">
+              <i class="fa-solid fa-cart-shopping fa-lg" style="color: #000000;"></i>
+              <div class="cartcontent">
+                <div class="headercartcontent">
+                  <h1>Carrinho</h1>
+                  <i class="fa-solid fa-xmark fa-xl" style="color: #000000;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdownheader">
+        <nav class="navdropdown">
+          <div class="classtotal">
+            <h1 class="titlenavdropdown">Produtos</h1>
+            <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+            <i class="fa-solid fa-chevron-up fa-sm" style="color: #000000;"></i>
+          </div>
+          <ul class="hamburgerdropdown">
+            <li class="category dropdownprodutos">
+              <a href="#">Camisas</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="produtocamisa.html">M/L - RX.10Anos</a></li>
+              </ul>
+            </li>
+            <li class="category dropdowncasacos">
+              <a href="#">Casacos</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="produtocasaco.html">Classic X.1.</a></li>
+              </ul>
+            </li>
+            <li class="category dropdowncalças">
+              <a href="#">Calças</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="#">-</a></li>
+              </ul>
+            </li>
+            <li class="category dropdownacessorios">
+              <a href="#">Acessórios</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="produtoacessorio.html">Crossbody Bag.2X21</a></li>
+              </ul>
+            </li>
+            <li class="category dropdownbones">
+              <a href="#">Bonés</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="produtobone.html">5panel SummerBlock</a></li>
+              </ul>
+            </li>
+            <li class="category dropdownmochilas">
+              <a href="#">Mochilas</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="#">-</a></li>
+              </ul>
+            </li>
+            <li class="category dropdownall">
+              <a href="#">Ver mais</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="#">-</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <div id="cart-container">
+    <div class="header-container-cart">
+      <h1>Carrinho</h1>
+      <i class="fa-solid fa-lg fa-xmark close-button-cart" style="color: #000000;"></i>
+    </div>
+    <p>Carrinho está vazio.</p>
+  </div>
+
+  <main class="containerlogin">
+    <div class="login">
+      <h1>Login</h1>
+      <div class="coolinput">
+        <label for="input" class="text">Usuário</label>
+        <input type="text" placeholder="Nome de Usuário..." name="input" class="input">
+      </div>
+      <div class="coolinput">
+        <label for="input" class="text">Senha</label>
+        <input type="password" placeholder="Sua senha..." name="input" class="input">
+      </div>
+      <a class="forgetpassword">Esqueceu a senha?</a>
+      <button>Entrar</button>
+    </div>
+
+    <div class="register">
+      <h1>Cadastro</h1>
+      <p>Ao cadastrar sua conta, você será capaz de comprar mais rápido, ficar atualizado sobre a situação de um pedido,
+        ficar por dentro das novidades e promoções e acompanhar o histórico dos pedidos que você já fez.</p>
+      <a class="buttoncontinue" href="register.html">Continuar</a>
+    </div>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>

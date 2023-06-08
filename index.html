@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rexpeita</title>
+  <link rel="icon" href="./img/logo.png">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;800&family=Montserrat:wght@100;300;400;600;900&family=Poppins:ital,wght@0,200;0,300;0,500;1,100&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="containerheader">
+      <div class="headercontent">
+        <div class="containerheadercontent">
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="search">
+            <form>
+              <button id="search_button">
+                <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></i>
+              </button>
+              <input type="text" placeholder="Buscar..." />
+            </form>
+          </div>
+          <img class="logorexpeita" src="./img/logo.png" alt="Logo da Rexpeita">
+          <div class="linksheader">
+            <div class="truckdelivery choosedropdown">
+              <h1 class="rastrear">Rastrear pedido</h1>
+            </div>
+            <div class="login choosedropdown">
+              <h1 class="loginregister">Login/Register</h1>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <div class="logindropdown">
+                <a class="loginin" href="login.html">Login</a>
+                <p>Não tem conta? <a href="register.html">Registra-se</a></p>
+              </div>
+            </div>
+            <i class="fa-solid fa-magnifying-glass fa-lg searchmobile" style="color: #000000;"></i>
+            <div class="cart-button">
+              <i class="fa-solid fa-cart-shopping fa-lg" style="color: #000000;"></i>
+              <div class="cartcontent">
+                <div class="headercartcontent">
+                  <h1>Carrinho</h1>
+                  <i class="fa-solid fa-xmark fa-xl" style="color: #000000;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menumobileheader">
+            <div class="truckdelivery choosedropdown">
+              <h1 class="rastrear">Rastrear pedido</h1>
+            </div>
+            <div class="login choosedropdown">
+              <a class="loginmobileheader" href="login.html">Login</a>
+              <a class="registermobileheader" href="register.html">Register</a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="dropdownheader">
+        <nav class="navdropdown">
+          <div class="classtotal">
+            <h1 class="titlenavdropdown">Produtos</h1>
+            <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+            <i class="fa-solid fa-chevron-up fa-sm" style="color: #000000;"></i>
+          </div>
+          <ul class="hamburgerdropdown">
+            <li class="category dropdownprodutos">
+              <a href="#">Camisas</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="produtocamisa.html">M/L - RX.10Anos</a></li>
+              </ul>
+            </li>
+            <li class="category dropdowncasacos">
+              <a href="#">Casacos</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="produtocasaco.html">Classic X.1.</a></li>
+              </ul>
+            </li>
+            <li class="category dropdowncalças">
+              <a href="#">Calças</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="#">-</a></li>
+              </ul>
+            </li>
+            <li class="category dropdownacessorios">
+              <a href="#">Acessórios</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="produtoacessorio.html">Crossbody Bag.2X21</a></li>
+              </ul>
+            </li>
+            <li class="category dropdownbones">
+              <a href="#">Bonés</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="produtobone.html">5panel SummerBlock</a></li>
+              </ul>
+            </li>
+            <li class="category dropdownmochilas">
+              <a href="#">Mochilas</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="#">-</a></li>
+              </ul>
+            </li>
+            <li class="category dropdownall">
+              <a href="#">Ver mais</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="#">-</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <div id="cart-container">
+    <div class="header-container-cart">
+      <h1>Carrinho</h1>
+      <i class="fa-solid fa-lg fa-xmark close-button-cart" style="color: #000000;"></i>
+    </div>
+    <p>Carrinho está vazio.</p>
+  </div>
+
+  <a href="produtocamisa.html">
+    <div class="painelmain">
+      <div class="painelcontentmain"></div>
+    </div>
+  </a>
+
+  <main>
+    <section class="category1">
+      <div class="acessorio">
+        <div class="textcat2">
+          <h1>Acessórios</h1>
+          <a href="produtoacessorio.html">Comprar</a>
+        </div>
+      </div>
+
+      <div class="camisa">
+        <div class="textcat2">
+          <h1>Camisa</h1>
+          <a href="produtocamisa.html">Comprar</a>
+        </div>
+      </div>
+
+      <div class="bone">
+        <div class="textcat2">
+          <h1>Boné</h1>
+          <a href="produtobone.html">Comprar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="category2">
+      <div class="kimono">
+        <div class="textcat2">
+          <h1>Kimono</h1>
+          <a href="produtokimono.html">Comprar</a>
+        </div>
+      </div>
+
+
+      <div class="casaco">
+        <div class="textcat2">
+          <h1>Casaco RX</h1>
+          <a href="produtocasaco.html">Comprar</a>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+
+  <section class="introducao">
+    <h1>O que é a Rexpeita</h1>
+    <p>Nascida em 2013, na cidade do Rio de Janeiro, a Rexpeita é uma marca de vestuário streetwear com influências do
+      esporte, da arte e da música.</p>
+    <p>Felipe, Leandro Gonçalves (irmão) e Felipe Salgado (amigo) foram criados em contato com a cultura de rua do Rio
+      de Janeiro. Grafite, rap, skate, tatuagem e moda faziam parte do cotidiano dos caras que viram aí uma combinação
+      original para criar sua própria marca que tem o intuito de unir essas subculturas.
+
+      A marca se envolve com diversas vertentes do esporte e da arte. Atletas de jiu-jitsu (Marcio André), surf (Pablo
+      Reinoso), skate (Gabriel Billa e Wallace Miúdo), esportes eletrônicos, MMA e kickboxing (Emerson Falcão) fazem
+      parte do time dos caras, além de grafiteiros, tatuadores (Henri Schumacker e Italo Nanais) e ilustradores.</p>
+  </section>
+
+  <section class="music">
+    <h1>Rexpeita presente no RAP e na música.</h1>
+    <p>Ouça agora Favela Vive 5</p>
+    <a href="https://www.youtube.com/watch?v=R_4Clufmtq8" target="_blank"><i class="fa-solid fa-play"
+        style="color: #000000;"></i></a>
+  </section>
+
+  <section class="doubts">
+    <div class="containerdoubts">
+      <h1>Perguntas Frequentes</h1>
+
+      <div class="cardsdoubts">
+
+        <div class="cardquestion">
+          <div class="question">
+            <h2>Meu cartão tem limite e a operação está cancelada.</h2>
+            <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>
+          </div>
+          <div class="answer">
+            <p class="answergap">Esse problema pode ocorrer por divergências entre os dados que constam na operadora do
+              cartão e os dados fornecidos para a compra. Você deve preencher o nome do titular da mesma forma que
+              consta no cartão (inclusive abreviações).</p>
+            <p class="answergap">Exemplo: "Maria P L da Silva" se constar assim no cartão.</p>
+            <li>
+              <p>Obs: Nossa equipe não tem acesso aos dados fornecidos e não podemos interferir no processo de aprovação
+                da compra. Caso não consiga concluir com sucesso, nos informe para viabilizarmos a venda de outra forma.
+              </p>
+            </li>
+          </div>
+        </div>
+
+        <div class="cardquestion">
+          <div class="question">
+            <h2>É possível parcelar?</h2>
+            <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>
+          </div>
+          <div class="answer">
+            <li>
+              <p>Sim, as compras via cartão de crédito podem ser parceladas em até 18x dependendo da operadora.</p>
+            </li>
+          </div>
+        </div>
+
+        <div class="cardquestion">
+          <div class="question">
+            <h2>Qual valor e quanto tempo para que o produto chegue, após o envio?</h2>
+            <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>
+          </div>
+          <div class="answer">
+            <p class="answergap">O valor e o tempo variam de acordo com o destino da mercadoria e o peso. Antes da
+              concluir o pedido, será possível simular o prazo de entrega estabelecido para sua região a partir do seu
+              CEP.</p>
+            <p>Atenção ao preencher os dados de envio do seu pedido, afinal, se o endereço estiver incompleto ou errado
+              poderá ocorrer atraso na entrega.</p>
+            <p>Os pedidos com o pagamento confirmado até às 12h00 normalmente serão postados no mesmo dia e os
+              pagamentos confirmados após esse horário serão postados no próximo dia útil, mas o prazo máximo para
+              postagem é de 48h após a confirmação. Informaremos via e-mail em até 24 horas após a postagem do produto o
+              código de rastreamento para que você possa acompanhar a entrega de seu pedido no site dos correios.</p>
+          </div>
+        </div>
+
+        <div class="cardquestion">
+          <div class="question">
+            <h2>Qual o prazo para troca de um produto?</h2>
+            <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>
+          </div>
+          <div class="answer">
+            <p>Você terá sete dias corridos a partir da data de recebimento registrada pelos correios para solicitar a
+              troca.</p>
+          </div>
+        </div>
+
+        <div class="cardquestion">
+          <div class="question">
+            <h2>Qual procedimento para efetuar a troca ou a desistência? Tem algum custo?</h2>
+            <i class="fa-solid fa-chevron-down fa-lg" style="color: #000000;"></i>
+          </div>
+          <div class="answer">
+            <p>Você pode conferir todas essas informações na seção de Política de Troca e Devolução.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="containerfooter">
+      <img src="./img/rxlogo.png" alt="Logo Rexpeita">
+      <div class="empresa">
+        <ul>
+          <h1 class="titlefooter">Geral</h1>
+          <li><a href="#">Política de privacidade</a></li>
+          <li><a href="#">Termos e condicões</a></li>
+          <li><a href="#">Política de troca e devolução</a></li>
+          <li><a href="#">Responsabilidade</a></li>
+          <li><a href="#">Acessibilidade</a></li>
+        </ul>
+      </div>
+      <div class="site">
+        <ul>
+          <h1 class="titlefooter">Perfil</h1>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Registre-se</a></li>
+          <li><a href="#">Minha conta</a></li>
+          <li><a href="#">Pedidos</a></li>
+          <li><a href="#">Entrega</a></li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h1 class="titlefooter">Contato</h1>
+        <div class="email">
+          <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+          <p>Contato@rexpeita.com.br</p>
+        </div>
+        <div class="phone">
+          <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+          <p>(21) 3576-4203</p>
+        </div>
+        <div class="map">
+          <i class="fa-solid fa-map-location" style="color: #ffffff;"></i>
+          <p>Rua Campanário, 31, CEP: 01402-901 - Rio de Janeiro- RJ</p>
+        </div>
+        <div class="company">
+          <i class="fa-solid fa-building" style="color: #ffffff;"></i>
+          <p>CNPJ: 18.677.805/0001-30</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="developedby">
+      <p>Developed by © <a href="https://www.linkedin.com/in/henriquepinheiroxavier/" target="_blank">Henrique</a></p>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>

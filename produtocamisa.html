@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rexpeita</title>
+  <link rel="icon" href="./img/logo.png">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;800&family=Montserrat:wght@100;300;400;600;900&family=Poppins:ital,wght@0,200;0,300;0,500;1,100&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="containerheader">
+
+      <div class="headercontent">
+        <div class="containerheadercontent">
+          <div class="search">
+            <form>
+              <button id="search_button">
+                <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></i>
+              </button>
+              <input type="text" placeholder="Buscar..." />
+            </form>
+          </div>
+          <a href="index.html"><img class="logorexpeita" src="./img/logo.png" alt="Logo da Rexpeita"></a>
+          <div class="linksheader">
+            <div class="truckdelivery">
+              <h1 class="rastrear">Rastrear pedido</h1>
+            </div>
+            <div class="cart-button">
+              <i class="fa-solid fa-cart-shopping fa-lg" style="color: #000000;"></i>
+              <div class="cartcontent">
+                <div class="headercartcontent">
+                  <h1>Carrinho</h1>
+                  <i class="fa-solid fa-xmark fa-xl" style="color: #000000;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdownheader">
+        <nav class="navdropdown">
+          <div class="classtotal">
+            <h1 class="titlenavdropdown">Produtos</h1>
+            <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+            <i class="fa-solid fa-chevron-up fa-sm" style="color: #000000;"></i>
+          </div>
+          <ul class="hamburgerdropdown">
+            <li class="category dropdownprodutos">
+              <a href="#">Camisas</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="produtocamisa.html">M/L - RX.10Anos</a></li>
+              </ul>
+            </li>
+            <li class="category dropdowncasacos">
+              <a href="#">Casacos</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="produtocasaco.html">Classic X.1.</a></li>
+              </ul>
+            </li>
+            <li class="category dropdowncalças">
+              <a href="#">Calças</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="#">-</a></li>
+              </ul>
+            </li>
+            <li class="category dropdownacessorios">
+              <a href="#">Acessórios</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="produtoacessorio.html">Crossbody Bag.2X21</a></li>
+              </ul>
+            </li>
+            <li class="category dropdownbones">
+              <a href="#">Bonés</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="produtobone.html">5panel SummerBlock</a></li>
+              </ul>
+            </li>
+            <li class="category dropdownmochilas">
+              <a href="#">Mochilas</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="#">-</a></li>
+              </ul>
+            </li>
+            <li class="category dropdownall">
+              <a href="#">Ver mais</a>
+              <i class="fa-solid fa-chevron-down fa-sm" style="color: #000000;"></i>
+              <ul class="dropdownmanual">
+                <li><a href="#">-</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div id="cart-container">
+    <div class="header-container-cart">
+      <h1>Carrinho</h1>
+      <i class="fa-solid fa-lg fa-xmark close-button-cart" style="color: #000000;"></i>
+    </div>
+    <p>Carrinho está vazio.</p>
+  </div>
+
+  <main class="mainproduct">
+    <div class="imgproduto">
+      <div class="divminifotos">
+        <img src="./img/camisarx1.jpg" alt="Partes do Casaco 1">
+        <img src="./img/camisarx2.jpg" alt="Partes do Casaco 2">
+        <img src="./img/camisarx3.jpg" alt="Partes do Casaco 3">
+      </div>
+      <img class="imgprincipalproduct" src="./img/camisarx.jpg" alt="Casaco completo">
+    </div>
+
+    <div class="textproduto">
+      <h1 class="titletextproduct">Camiseta M/L - RX.10Anos</h1>
+      <div class="price">
+        <p class="pricenow">R$180,00</p>
+      </div>
+      <p>Selecione um tamanho</p>
+      <div class="sizes">
+        <button class="sizebutton">P</button>
+        <button class="sizebutton">M</button>
+        <button class="sizebutton">G</button>
+        <button class="sizebutton">GG</button>
+        <button class="sizebutton">XGG</button>
+      </div>
+      <div class="metricas">
+        <i class="fa-solid fa-sliders" style="color: #000000;"></i>
+        <p>Medidas</p>
+      </div>
+      <button class="buy">Comprar</button>
+      <div class="infosproduct">
+        <div class="truckproduct">
+          <i class="fa-solid fa-truck fa-2xl" style="color: #000000;"></i>
+          <div class="texttruckproduct">
+            <p>Entrega gratuita</p>
+            <p>Em compras a partir de R$ 280,00</p>
+          </div>
+        </div>
+        <div class="givebackproduct">
+          <i class="fa-solid fa-box fa-2xl" style="color: #000000;"></i>
+          <div class="texttruckproduct">
+            <p>Devoluções gratuitas</p>
+            <p>Não serviu? Devolva em um prazo de 30 dias</p>
+          </div>
+        </div>
+        <div class="paymentsafeproduct">
+          <i class="fa-regular fa-credit-card fa-2xl" style="color: #000000;"></i>
+          <div class="texttruckproduct">
+            <p>Pague com segurança</p>
+            <p>Pague com cartão de crédito, boleto ou transferência bancária</p>
+          </div>
+        </div>
+      </div>
+      <div class="descriptionproduct">
+        <h1>Descrição</h1>
+        <p>Malha 100% algodão.</p>
+        <p>Arte em silk.</p>
+        <p>Edição especial limitada em comemoração aos 10 anos da Rexpeita.</p>
+        <p>Collab - @pedrosiqueirarj</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>

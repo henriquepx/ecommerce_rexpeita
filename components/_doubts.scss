@@ -1,0 +1,65 @@
+@import '../abstract/variables';
+
+.doubts {
+  .containerdoubts {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+    padding: 7rem 0rem;
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      font-family: $font-montserrat;
+      font-weight: 600;
+    }
+    .cardsdoubts {
+      margin-top: 4rem;
+      .cardquestion {
+        &:nth-child(-n + 4) {
+          border-bottom: 2px solid #e9e8e8;
+        }
+        .question {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 2.2rem;
+          cursor: pointer;
+          h2 {
+            font-size: 1.2rem;
+            font-family: $font-montserrat;
+            font-weight: 600;
+          }
+          &:hover {
+            background-color: #f6f6f6;
+          }
+          &:hover h2 {
+            text-decoration: underline;
+          }
+        }
+        .answer {
+          display: none;
+          padding: 1.4rem 0rem 2rem 2.2rem;
+          p {
+            font-family: $font-montserrat;
+            font-weight: 450;
+            color: #000;
+            margin-top: .6rem;
+            span {
+              color: #008000;
+              font-weight: bold;
+            }
+          }
+        }
+        .answer.active {
+          display: block;
+        }
+        .answer1 {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}
